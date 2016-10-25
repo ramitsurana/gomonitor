@@ -1,0 +1,48 @@
+Monitoring with go
+
+26 October 2016
+
+* Monitoring 
+
+-  Monitoring is an awesome
+
+* runtime
+
+* pprof
+
+* Prometheus
+
+* Demo
+
+* How to implement it ?
+
+* Zipkin
+
+* Demo
+
+* How to implement it ?
+
+- Fetch the zipkin image from docker
+
+```` 
+docker run -d -p 9410-9411:9410-9411 openzipkin/zipkin:1.12.0
+````
+
+* OpenTracing
+
+* Tools
+
+- Bleevesearch
+- StatHat
+- psutil
+
+* Summary
+
+- Monitoring is hard.
+- Go makes it easy to adopt due to its.
+- Try using basic golang packages
+- Helps you achieve extraordinary results with minimum efforts
+
+Ramit Surana
+@ramitsurana
+ramitsurana@gmail.com
