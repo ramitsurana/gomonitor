@@ -2,21 +2,32 @@ Monitoring with go
 
 26 October 2016
 
+Ramit Surana
+@ramitsurana
+ramitsurana@gmail.com
+
 * Monitoring 
 
--  Monitoring is an awesome
+-  Monitoring is an 
+-  Go 1.7 adds net/http/httptrace package for tracing
 
-* runtime
+* Httpstat
 
-* pprof
+- Introduced by Dave Chehney https://github.com/davecheney/httpstat
+- Inspired by https://github.com/reorx/httpstat
 
 * Prometheus
+
+- Systems and service monitoring system
+ 
 
 * Demo
 
 * How to implement it ?
 
 * Zipkin
+ 
+-
 
 * Demo
 
@@ -24,9 +35,7 @@ Monitoring with go
 
 - Fetch the zipkin image from docker
 
-```` 
-docker run -d -p 9410-9411:9410-9411 openzipkin/zipkin:1.12.0
-````
+.code docker run -d -p 9410-9411:9410-9411 openzipkin/zipkin
 
 * OpenTracing
 
@@ -35,14 +44,11 @@ docker run -d -p 9410-9411:9410-9411 openzipkin/zipkin:1.12.0
 - Bleevesearch
 - StatHat
 - psutil
+- Bosun
 
 * Summary
 
 - Monitoring is hard.
-- Go makes it easy to adopt due to its.
-- Try using basic golang packages
-- Helps you achieve extraordinary results with minimum efforts
-
-Ramit Surana
-@ramitsurana
-ramitsurana@gmail.com
+- Go makes it easy to adopt due to its perfomance and simplicty.
+- Try using basic golang packages like httptrace.
+- Slides available at github.com/ramitsurana/gomonitor
